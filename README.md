@@ -1,2 +1,0 @@
-# thisishavana
-Full guide

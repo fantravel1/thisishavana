@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | This Is Havana</title>
+  <meta name="description" content="This section of ThisIsHavana.com is coming soon. We're building something honest about Havana — neighborhood by neighborhood.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://thisishavana.com/coming-soon.html">
+
+  <meta property="og:title" content="Coming Soon — This Is Havana">
+  <meta property="og:description" content="This section is being built. Havana's stories, routines, sounds, and voices — coming soon.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .coming-soon__particles {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .coming-soon__particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--color-ochre);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 8s ease-in-out infinite;
+    }
+    .coming-soon__particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; animation-duration: 7s; }
+    .coming-soon__particle:nth-child(2) { left: 30%; top: 60%; animation-delay: 1s; animation-duration: 9s; }
+    .coming-soon__particle:nth-child(3) { left: 50%; top: 40%; animation-delay: 2s; animation-duration: 6s; }
+    .coming-soon__particle:nth-child(4) { left: 70%; top: 80%; animation-delay: 3s; animation-duration: 8s; }
+    .coming-soon__particle:nth-child(5) { left: 90%; top: 30%; animation-delay: 4s; animation-duration: 10s; }
+    .coming-soon__particle:nth-child(6) { left: 20%; top: 70%; animation-delay: 1.5s; animation-duration: 7.5s; }
+    .coming-soon__particle:nth-child(7) { left: 60%; top: 10%; animation-delay: 2.5s; animation-duration: 8.5s; }
+    .coming-soon__particle:nth-child(8) { left: 80%; top: 50%; animation-delay: 3.5s; animation-duration: 6.5s; }
+
+    @keyframes particleFloat {
+      0%, 100% { opacity: 0; transform: translateY(0) scale(1); }
+      25% { opacity: 0.6; }
+      50% { opacity: 0.3; transform: translateY(-40px) scale(1.5); }
+      75% { opacity: 0.5; }
+    }
+
+    .coming-soon__divider {
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--color-ochre), transparent);
+      margin: 2rem auto;
+    }
+
+    .coming-soon__barrios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .coming-soon__barrio-tag {
+      padding: 0.4rem 1rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border: 1px solid rgba(212, 165, 116, 0.25);
+      border-radius: 9999px;
+      color: var(--color-text-muted);
+      transition: all 0.35s ease;
+    }
+
+    .coming-soon__barrio-tag:hover {
+      border-color: var(--color-ochre);
+      color: var(--color-ochre);
+    }
+
+    .coming-soon__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-ochre);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .coming-soon__back:hover {
+      color: var(--color-ochre-light);
+      transform: translateX(-4px);
+    }
+
+    .coming-soon__back svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .coming-soon__quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: var(--color-text-muted);
+      max-width: 40ch;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="This Is Havana - Home">This Is <span>Havana</span></a>
+      <div class="nav__links">
+        <a href="/#barrios">Barrios</a>
+        <a href="/#where-to-stay">Where to Stay</a>
+        <a href="/#understand">Understand</a>
+        <a href="/#daily-life">Daily Life</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="/#barrios">Barrios</a>
+      <a href="/#where-to-stay">Where to Stay</a>
+      <a href="/#understand">Understand</a>
+      <a href="/#daily-life">Daily Life</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="coming-soon">
+      <div class="coming-soon__bg">
+        <img src="https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&w=1920&q=80" alt="Atmospheric view of Havana at dusk with warm light on weathered buildings" width="1920" height="1080" loading="eager">
+      </div>
+
+      <div class="coming-soon__particles">
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+        <div class="coming-soon__particle"></div>
+      </div>
+
+      <div class="coming-soon__content">
+        <p class="coming-soon__quote">"A city that breathes sideways."</p>
+
+        <div class="coming-soon__divider"></div>
+
+        <h1 class="coming-soon__title">Coming Soon</h1>
+        <p class="coming-soon__desc">This corner of Havana is still being built. Stories, routines, sounds, food systems, and local voices — arriving as Havana reveals them. No rush. This city doesn't reward it.</p>
+
+        <div class="coming-soon__barrios">
+          <span class="coming-soon__barrio-tag">Stories</span>
+          <span class="coming-soon__barrio-tag">Voices</span>
+          <span class="coming-soon__barrio-tag">Sound</span>
+          <span class="coming-soon__barrio-tag">Food</span>
+          <span class="coming-soon__barrio-tag">Routines</span>
+          <span class="coming-soon__barrio-tag">Streets</span>
+          <span class="coming-soon__barrio-tag">Movement</span>
+        </div>
+
+        <a href="/" class="coming-soon__back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to This Is Havana
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
